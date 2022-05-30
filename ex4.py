@@ -175,7 +175,6 @@ def train_model(processed_X, y):
 
 
     """
-    # model = GaussianNB()
     model = OneVsRestClassifier(estimator=AdaBoostClassifier())
     model.fit(processed_X, y)
 
